@@ -1,5 +1,9 @@
 package main;
 
+/*
+ * 	text file encoding : gbk
+ */
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -33,7 +37,7 @@ public class Main {
 		StringBuilder stringBuilder = new StringBuilder();
 		Calendar calendar = new GregorianCalendar();
 		int year = calendar.get(Calendar.YEAR);
-		int month = calendar.get(Calendar.MONTH);
+		int month = calendar.get(Calendar.MONTH) + 1;
 		int day = calendar.get(Calendar.DAY_OF_MONTH);
 		int hour = calendar.get(Calendar.HOUR_OF_DAY);
 		int minute = calendar.get(Calendar.MINUTE);
